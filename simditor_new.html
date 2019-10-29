@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://simditor.tower.im/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Simditor</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://simditor.tower.im/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://simditor.tower.im/favicon.ico" sizes="32x32">
+    <link rel="icon" href="https://simditor.tower.im/favicon.ico" sizes="64x64">
+    <link rel="icon" href="https://simditor.tower.im/favicon.ico" sizes="128x128">
+
+    <link media="all" rel="stylesheet" type="text/css" href="./css/app.css">
+    <link media="all" rel="stylesheet" type="text/css" href="./css/simditor.css">
+	<link media="all" rel="stylesheet" type="text/css" href="./css/simditor-html.css">
+	<link media="all" rel="stylesheet" type="text/css" href="./css/simditor-fullscreen.css">
+	
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+	</head>
+<body>
+<textarea id="editor222" placeholder="这里输入文字..." autofocus></textarea>
+
+<script type="text/javascript" src="./js/module.js"></script>
+<script type="text/javascript" src="./js/uploader.js"></script>
+<script type="text/javascript" src="./js/hotkeys.js"></script>
+<script type="text/javascript" src="./js/simditor.js"></script>
+<script type="text/javascript" src="./js//beautify-html.min.js"></script>
+<script type="text/javascript" src="./js/simditor-html.js"></script>
+<script type="text/javascript" src="./js/simditor-mark.js"></script>
+<script type="text/javascript" src="./js/simditor-autosave.js"></script>
+<script type="text/javascript" src="./js/simditor-fullscreen.js"></script>
+
+
+<!--<script type="text/javascript" src="./Simditor_files/page-demo.js"></script>-->
+<script>
+let toolbar = ['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', 'mark','|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment','html','fullscreen'];
+var a=location.search;
+var editor = new Simditor({
+			textarea: $('#editor222'),
+			placeholder: '这里输入文字...',
+			toolbar: toolbar,
+			pasteImage: true,
+			defaultImage: 'upload/image/defaultImg.jpg',
+			//upload: {url: '',},
+			autosave: 'upload'
+    });
+</script>
+</body>
+</html>
